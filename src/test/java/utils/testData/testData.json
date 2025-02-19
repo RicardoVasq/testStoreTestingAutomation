@@ -1,9 +1,11 @@
 {
   "variablesLogin": {
     "userValido": {
+      "name": "Ricardo Vasquez",
       "email": "prueba@gg.com",
-      "password": "ricado"},
+      "password": "ricardo"},
     "userIncorrecto":{
+      "name": "Ricardo Vasquez",
       "email": "error@gg.com",
       "password": "error"}
   }

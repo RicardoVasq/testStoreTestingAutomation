@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/src/test/resources/logs/traceLogs.log
+/src/test/resources/logs/informativeLogs.log
+/src/test/resources/logs/debugLogs.log

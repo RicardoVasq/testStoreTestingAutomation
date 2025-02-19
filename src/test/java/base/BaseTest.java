@@ -6,15 +6,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.asserts.SoftAssert;
 import utils.Logs;
 import utils.WebDriverProvider;
-
+import utils.listeners.SuiteListeners;
+import utils.listeners.TestListeners;
 import java.time.Duration;
 
+@Listeners({TestListeners.class, SuiteListeners.class})
 public class BaseTest {
     private static final Logger log = LoggerFactory.getLogger(BaseTest.class);
-    protected SoftAssert softAssertl;
+    protected static SoftAssert softAssertl;
     protected static WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
