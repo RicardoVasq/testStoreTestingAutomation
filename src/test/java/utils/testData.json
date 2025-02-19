@@ -1,0 +1,11 @@
+{
+  "variablesLogin": {
+    "userValido": {
+      "email": "prueba@gg.com",
+      "password": "ricado"},
+    "userIncorrecto":{
+      "email": "error@gg.com",
+      "password": "error"}
+  }
+
+}
