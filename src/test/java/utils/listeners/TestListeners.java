@@ -1,6 +1,5 @@
 package utils.listeners;
 
-import org.testng.IClassListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import utils.FileManager;

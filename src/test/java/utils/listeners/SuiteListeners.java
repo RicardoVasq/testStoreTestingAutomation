@@ -2,7 +2,6 @@ package utils.listeners;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
-import org.testng.ITestListener;
 import utils.FileManager;
 import utils.Logs;
 
