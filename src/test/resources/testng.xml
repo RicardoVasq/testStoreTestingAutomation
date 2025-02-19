@@ -1,0 +1,13 @@
+<suite name="Regression Suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
