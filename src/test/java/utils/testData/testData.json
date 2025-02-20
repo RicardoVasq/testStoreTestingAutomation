@@ -7,7 +7,11 @@
     "userIncorrecto":{
       "name": "Ricardo Vasquez",
       "email": "error@gg.com",
-      "password": "error"}
+      "password": "error"},
+    "header": "Log in to your account",
+    "currentPage": "Home Log in to your account",
+    "formatoIncorrect": "sinformato",
+    "messeErrorLogin": "Authentication failed."
   }
 
 }

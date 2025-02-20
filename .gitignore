@@ -39,3 +39,4 @@ build/
 /src/test/resources/logs/traceLogs.log
 /src/test/resources/logs/informativeLogs.log
 /src/test/resources/logs/debugLogs.log
+/.idea/
