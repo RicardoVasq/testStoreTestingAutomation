@@ -1,12 +1,17 @@
 package test;
 
 import base.BaseTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.loginPage;
 import utils.Logs;
 import utils.testData.reader.variablesReader;
 
 public class LoginTest extends BaseTest {
+    private static final Logger log = LoggerFactory.getLogger(LoginTest.class);
+
     @Test
     public void testUserNotLogin() {
         // Validamos que el usuario no esté logeado al intentar acceder a la página de login.
@@ -145,10 +150,34 @@ public class LoginTest extends BaseTest {
 
     }
 
+    @Test
+    public void testLinkForgotPassword() {
+        // Accedemos a la página de login.
+        Logs.debug("Nos dirigimos a la pagina de Login");
+        loginPage.clickSignIn();
 
-    /* faltaria validar link de forgot password
-        el link de no Account
-     */
+        //Damos click en el link de Forgot your pasword?
+        Logs.debug("Damos click en el link de Forgot you password");
+        loginPage.clickLinkForgotPasword();
+
+        //Verificamos quee nos redireccione a la pagina correcta
+        Logs.debug("Verificamos la URL donde nos redirecciona");
+        Assert.assertEquals(loginPage.captureUrlCurrent(),variablesReader.variables().getUrlPage().getForgotPassword());
+    }
+
+    @Test
+    public void testLinkRegistration() {
+        // Accedemos a la página de login.
+        Logs.debug("Nos dirigimos a la pagina de Login");
+        loginPage.clickSignIn();
+
+        //Damos click en el link de Forgot your pasword?
+        Logs.debug("Damos click en el link de Forgot you password");
+        loginPage.clickLinkNoAccount();
+        Assert.assertEquals(loginPage.captureUrlCurrent(),variablesReader.variables().getUrlPage().getRegistration());
+
+    }
+
 }
 
 

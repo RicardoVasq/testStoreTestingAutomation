@@ -20,6 +20,9 @@ public class loginPage extends BaseTest {
     private static final By headerPage = By.cssSelector("header[class='page-header']");
     private static final By hideShowPasswordButton = By.cssSelector("button[data-action='show-password']");
     private static final By messegeErrorLogin = By.cssSelector("li[class='alert alert-danger']");
+    private static final By linkForgotPasssword = By.cssSelector("div[class='forgot-password']");
+    private static final By linkNoAccount = By.cssSelector("div[class='no-account']");
+
 
 
 
@@ -81,6 +84,14 @@ public class loginPage extends BaseTest {
     }
     public static String setErrorMessegeLogin(){
         return driver.findElement(messegeErrorLogin).getText();
+    }
+    public static void clickLinkForgotPasword(){
+        driver.findElement(linkForgotPasssword).click();
+    }
+    public static void clickLinkNoAccount(){
+        driver.findElement(linkNoAccount).click();}
+    public static String captureUrlCurrent(){
+        return driver.getCurrentUrl();
     }
 
 

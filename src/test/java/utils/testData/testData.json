@@ -12,6 +12,10 @@
     "currentPage": "Home Log in to your account",
     "formatoIncorrect": "sinformato",
     "messeErrorLogin": "Authentication failed."
+  },
+  "urlPage": {
+    "forgotPassword": "https://teststore.automationtesting.co.uk/index.php?controller=password",
+    "registration": "https://teststore.automationtesting.co.uk/index.php?controller=registration"
   }
 
 }
