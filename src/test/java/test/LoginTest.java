@@ -33,9 +33,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testVerifierTitlePage() {
-        // Damos click en el botón 'Sign In' para ir a la página de login.
-        Logs.debug("Damos click en Sign In");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         // Validamos que el título de la página contenga el texto esperado.
         Logs.debug("Validamos que el Titulo de la pagina contega el texto esperado");
@@ -53,10 +51,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testShowHidePasswordButton() {
-        // Damos click en el botón 'Sign In' para ir a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
-
+        loginPage.redirectionLoginPage();
         // Introducimos una contraseña en el campo correspondiente.
         Logs.debug("Digitamos en el campo de password");
         loginPage.setPasswordTextBox(variablesReader.variables().getVariablesLogin().getUserValido().getPassword());
@@ -80,9 +75,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLoginWithoutData() {
-        // Accedemos a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         // Intentamos hacer login sin ingresar ningún dato.
         Logs.debug("Intentamos logearnos sin ingresar sin ingresar datos");
@@ -108,9 +101,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testFormatEmailTextBox() {
-        // Accedemos a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         // Intentamos ingresar un email con formato incorrecto.
         Logs.debug("Ingresamos un data sin el formato correcto en el campo email");
@@ -129,9 +120,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLoginIncorrect() {
-        // Accedemos a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         // Realizamos el login utilizando credenciales incorrecta.
         Logs.debug("Realizamos el login con credenciales Incorrectas");
@@ -152,9 +141,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLinkForgotPassword() {
-        // Accedemos a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         //Damos click en el link de Forgot your pasword?
         Logs.debug("Damos click en el link de Forgot you password");
@@ -167,9 +154,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLinkRegistration() {
-        // Accedemos a la página de login.
-        Logs.debug("Nos dirigimos a la pagina de Login");
-        loginPage.clickSignIn();
+        loginPage.redirectionLoginPage();
 
         //Damos click en el link de Forgot your pasword?
         Logs.debug("Damos click en el link de Forgot you password");

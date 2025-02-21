@@ -3,8 +3,9 @@ package pages;
 import base.BaseTest;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 import utils.Logs;
+
+import java.time.Duration;
 
 public class loginPage extends BaseTest {
     //Elementos del Login
@@ -22,8 +23,6 @@ public class loginPage extends BaseTest {
     private static final By messegeErrorLogin = By.cssSelector("li[class='alert alert-danger']");
     private static final By linkForgotPasssword = By.cssSelector("div[class='forgot-password']");
     private static final By linkNoAccount = By.cssSelector("div[class='no-account']");
-
-
 
 
     //Metodos Acción
@@ -93,9 +92,10 @@ public class loginPage extends BaseTest {
     public static String captureUrlCurrent(){
         return driver.getCurrentUrl();
     }
-
-
-
-
+    public static void redirectionLoginPage(){
+        // Damos click en el botón 'Sign In' para ir a la página de login.
+        Logs.debug("Damos click en Sign In");
+        clickSignIn();
+    }
 
 }
