@@ -23,6 +23,10 @@
     "header": "Forgot your password?",
     "currentPage": "Home Reset your password",
     "messegeForUser": "Please enter the email address you used to register. You will receive a temporary link to reset your password."
+  },
+  "newAccount": {
+    "header": "Create an account",
+    "currentPage": "Home Create an account"
   }
 
 }
