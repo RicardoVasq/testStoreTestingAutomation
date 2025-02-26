@@ -26,7 +26,17 @@
   },
   "newAccount": {
     "header": "Create an account",
-    "currentPage": "Home Create an account"
+    "currentPage": "Home Create an account",
+    "form": {
+      "labelFirstName": "First Name",
+      "labelLastName": "Last Name",
+      "labelEmail": "Email",
+      "labelPassword": "Password",
+      "labelBirthdate": "Birthdate",
+      "messageOffers": "Receive offers from our partners",
+      "messageTermsConditions": "I agree to the terms and conditions and the privacy policy",
+      "messageNewsletter":"Sign up for our newsletter\nYou may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice."
+    }
   }
 
 }
