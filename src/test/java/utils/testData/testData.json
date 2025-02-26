@@ -28,8 +28,8 @@
     "header": "Create an account",
     "currentPage": "Home Create an account",
     "form": {
-      "labelFirstName": "First Name",
-      "labelLastName": "Last Name",
+      "labelFirstName": "First name",
+      "labelLastName": "Last name",
       "labelEmail": "Email",
       "labelPassword": "Password",
       "labelBirthdate": "Birthdate",

@@ -15,7 +15,7 @@ public class NewAccountPage extends BaseTest {
     private static final By radioButtonMistress = By.id("field-id_gender-2");
     private static final By labelFieldFirstName = By.cssSelector("label[for='field-firstname']");
     private static final By fieldFirstName = By.id("field-firstname");
-    private static final By labelFieldLastName = By.cssSelector("label[for='field-lasttname']");
+    private static final By labelFieldLastName = By.cssSelector("label[for='field-lastname']");
     private static final By fieldLastName = By.id("field-lastname");
     private static final By labelFieldEmail = By.cssSelector("label[for='field-email']");
     private static final By fieldEmail = By.id("field-email");
